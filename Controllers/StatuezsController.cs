@@ -12,6 +12,7 @@ using WebApplication3.Models;
 namespace WebApplication3.Controllers
 {
     [Authorize]
+    //[Authorize(Roles = "Admin")]
     public class StatuezsController : Controller
     {
         private readonly ApplicationDbContext _context;

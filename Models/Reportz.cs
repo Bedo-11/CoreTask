@@ -16,7 +16,9 @@ namespace WebApplication3.Models
         [Required]
         [Display(Name = "Statue of report")]
         public int StatuezId { get; set; }
+        [Display(Name = "Statue")]
         public Statuez Statuez { get; set; }
+
         [ScaffoldColumn(false)]
         public String UserId { get; set; }
         public ApplicationUser User { get; set; }

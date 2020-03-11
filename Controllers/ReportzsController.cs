@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -20,11 +21,13 @@ namespace WebApplication3.Controllers
         
         private readonly ApplicationDbContext _context;
         private readonly IHostingEnvironment _environment;
+        //private readonly UserManager<ApplicationUser> _userManager;
 
         public ReportzsController(ApplicationDbContext context, IHostingEnvironment environment)
         {
             _context = context;
             _environment = environment;
+            //_userManager = userManager;
         }
 
         // GET: Reportzs
@@ -74,6 +77,8 @@ namespace WebApplication3.Controllers
                 reportz.ImageUrl = await UserFile.UploadeNewImageAsync(reportz.ImageUrl,
               myfile, _environment.WebRootPath, Properties.Resources.ImgFolder, 100, 100);
 
+                //reportz.UserId = _userManager.GetUserId(User);
+
                 _context.Add(reportz);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -84,6 +89,7 @@ namespace WebApplication3.Controllers
         }
 
         // GET: Reportzs/Edit/5
+        //[Authorize(Roles = "Manager")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -104,6 +110,8 @@ namespace WebApplication3.Controllers
         // POST: Reportzs/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+
+        //[Authorize(Roles = "Manager")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,StatuezId,Topicz,Textz,ImageUrl")] Reportz reportz)
@@ -139,6 +147,7 @@ namespace WebApplication3.Controllers
         }
 
         // GET: Reportzs/Delete/5
+        //[Authorize(Roles="Manager")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -159,6 +168,7 @@ namespace WebApplication3.Controllers
         }
 
         // POST: Reportzs/Delete/5
+        //[Authorize(Roles="Manager")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
