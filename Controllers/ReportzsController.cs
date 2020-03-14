@@ -92,7 +92,7 @@ namespace WebApplication3.Controllers
         }
 
         // GET: Reportzs/Edit/5
-        //[Authorize(Roles = "Manager")]
+       
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -117,6 +117,7 @@ namespace WebApplication3.Controllers
         //[Authorize(Roles = "Manager")]
         [HttpPost]
         [ValidateAntiForgeryToken]
+        
         public async Task<IActionResult> Edit(int id, [Bind("Id,StatuezId,Topicz,Textz,ImageUrl")] Reportz reportz)
         {
             if (id != reportz.Id)
@@ -150,7 +151,7 @@ namespace WebApplication3.Controllers
         }
 
         // GET: Reportzs/Delete/5
-        //[Authorize(Roles="Manager")]
+        
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
