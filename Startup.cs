@@ -37,7 +37,7 @@ namespace WebApplication3
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>()
+            services.AddDefaultIdentity<IdentityUser>() 
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
 

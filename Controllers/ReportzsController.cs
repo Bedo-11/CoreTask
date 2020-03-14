@@ -21,19 +21,22 @@ namespace WebApplication3.Controllers
         
         private readonly ApplicationDbContext _context;
         private readonly IHostingEnvironment _environment;
-        //private readonly UserManager<ApplicationUser> _userManager;
+      //ivate readonly UserManager<ApplicationUser> _userManager;
+        private readonly UserManager<IdentityUser> _userManager;
 
-        public ReportzsController(ApplicationDbContext context, IHostingEnvironment environment)
+
+        public ReportzsController(ApplicationDbContext context, IHostingEnvironment environment , UserManager<IdentityUser> userManager)
         {
             _context = context;
             _environment = environment;
-            //_userManager = userManager;
+            _userManager = userManager; 
         }
 
         // GET: Reportzs
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Reportz.Include(r => r.Statuez).Include(r => r.User);
+            var currentUser = _userManager.GetUserId(User);
+            var applicationDbContext = _context.Reportz.Include(r => r.Statuez).Where(r => r.UserId == currentUser);
             return View(await applicationDbContext.ToListAsync());
         }
 
@@ -77,7 +80,7 @@ namespace WebApplication3.Controllers
                 reportz.ImageUrl = await UserFile.UploadeNewImageAsync(reportz.ImageUrl,
               myfile, _environment.WebRootPath, Properties.Resources.ImgFolder, 100, 100);
 
-                //reportz.UserId = _userManager.GetUserId(User);
+                reportz.UserId = _userManager.GetUserId(User); 
 
                 _context.Add(reportz);
                 await _context.SaveChangesAsync();
