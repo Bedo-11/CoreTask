@@ -4,44 +4,56 @@
     ViewData["Title"] = "Edit";
 }
 
-<h2>Edit</h2>
+    <div class="container form-b bShadow bShadow-62 animate__animated animate__fadeInDown">
+        <h2>انشاء بلاغ جديد</h2>
 
-<h4>Reportz</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="StatuezId" class="control-label"></label>
-                <select asp-for="StatuezId" class="form-control" asp-items="ViewBag.StatuezId"></select>
-                <span asp-validation-for="StatuezId" class="text-danger"></span>
+
+        <hr />
+        <div class="row">
+            <div class="col-md-12">
+                <form asp-action="Create" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="form-group col-md-6 pull-right">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <label asp-for="StatuezId" class="control-label">حالة الطلب</label>
+                            <select asp-for="StatuezId" class="form-control" asp-items="ViewBag.StatuezId"></select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label asp-for="Topicz" class="control-label">موضوع البلاغ</label>
+                            <input asp-for="Topicz" class="form-control" />
+                            <span asp-validation-for="Topicz" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div style="direction: rtl" class="row">
+                        <div class="form-group col-md-12">
+                            <label asp-for="Textz" class="control-label">نص البلاغ</label>
+                            <textarea asp-for="Textz" class="form-control"> </textarea>
+                            <span asp-validation-for="Textz" class="text-danger"></span>
+                        </div>
+                    </div>
+                    @*<div class="form-group col-md-6">
+                        <label asp-for="ImageUrl" class="control-label"></label>
+                        <input type="file" name="myfile" id="file" accept=".png,.jpg,.gif,.tif" class="btn btn-default" />
+                        <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                        <input asp-for="ImageUrl" id="fileinput" class="form-control" />
+                    </div>*@
+                    <div style="display: flex; justify-content: center" class="row mt-4 mb-5">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <button type="submit" class="form-control submit">
+                                    حفظ     <i class="fas fa-save"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <a style="width: 100%" class="btn btn btn-info" asp-action="Index">
+                                    رجوع      <i class="fas fa-arrow-left"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
-        <input type="hidden" asp-for="UserId" />
-            <div class="form-group">
-                <label asp-for="Topicz" class="control-label"></label>
-                <input asp-for="Topicz" class="form-control" />
-                <span asp-validation-for="Topicz" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Textz" class="control-label"></label>
-                <input asp-for="Textz" class="form-control" />
-                <span asp-validation-for="Textz" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ImageUrl" class="control-label"></label>
-                <input asp-for="ImageUrl" class="form-control" />
-                <span asp-validation-for="ImageUrl" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-default" />
-            </div>
-        </form>
+        </div>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-

@@ -14,7 +14,7 @@ namespace WebApplication3.Data
             : base(options)
         {
         }
-        public DbSet<WebApplication3.Models.ApplicationUser> ApplicationUser { get; set; }
+        public DbSet<ApplicationUser> ApplicationUser { get; set; }
         public DbSet<Reportz> Reportz { get; set; }
         public DbSet<Statuez> Statuez { get; set; }
     }

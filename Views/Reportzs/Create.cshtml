@@ -3,57 +3,79 @@
 @{
     ViewData["Title"] = "Create";
 }
+    <div class="container form-b bShadow bShadow-62 animate__animated animate__fadeInDown">
+        <h2>انشاء بلاغ جديد</h2>
 
-<h2>Create</h2>
+        
+        <hr />
+        <div class="row">
+            <div class="col-md-12">
+                <form asp-action="Create" enctype="multipart/form-data">
+                    <div class="row">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <div class="form-group col-md-6 pull-right">
+                                <label asp-for="Topicz" class="control-label">منشئ البلاغ</label>
+                                <input asp-for="Topicz" class="form-control" value="@User.Identity.Name" />
+                            </div>
 
-<h4>Reportz</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create" enctype="multipart/form-data">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="StatuezId" class="control-label"></label>
-                <select asp-for="StatuezId" class ="form-control" asp-items="ViewBag.StatuezId"></select>
+                        }
+                        <div class="form-group col-md-6">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <label asp-for="StatuezId" class="control-label">حالة الطلب</label>
+                            <select asp-for="StatuezId" class="form-control" asp-items="ViewBag.StatuezId"></select>
+                        </div>
+                    </div>
+                    <div style="direction: rtl" class="row">
+                        <div class="form-group col-md-6">
+                            <label asp-for="Topicz" class="control-label">موضوع البلاغ</label>
+                            <input asp-for="Topicz" class="form-control" />
+                            <span asp-validation-for="Topicz" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label asp-for="Textz" class="control-label">نص البلاغ</label>
+                            <textarea asp-for="Textz" class="form-control"> </textarea>
+                            <span asp-validation-for="Textz" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    @*<div class="form-group col-md-6">
+                        <label asp-for="ImageUrl" class="control-label"></label>
+                        <input type="file" name="myfile" id="file" accept=".png,.jpg,.gif,.tif" class="btn btn-default" />
+                        <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                        <input asp-for="ImageUrl" id="fileinput" class="form-control" />
+                    </div>*@
+                <div style="display: flex; justify-content: center" class="row mt-4 mb-5">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <button type="submit" class="form-control submit">
+                                حفظ     <i class="fas fa-save"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <a style="width: 100%" class="btn btn btn-info" asp-action="Index">
+                                رجوع      <i class="fas fa-arrow-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                </form>
             </div>
-            <div class="form-group">
-                <label asp-for="Topicz" class="control-label"></label>
-                <input asp-for="Topicz" class="form-control" />
-                <span asp-validation-for="Topicz" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Textz" class="control-label"></label>
-                <input asp-for="Textz" class="form-control" />
-                <span asp-validation-for="Textz" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ImageUrl" class="control-label"></label>
-                <input type="file" name="myfile" id="file" accept=".png,.jpg,.gif,.tif" class="btn btn-default" />
-                <span asp-validation-for="ImageUrl" class="text-danger"></span>
-                <input asp-for="ImageUrl" id="fileinput" class="form-control" />
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
-            </div>
-        </form>
-    </div>
-</div>
+        </div>
+        </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
-@section Scripts {
+        @section Scripts {
 
-    <script>
-        $(document).ready(function () {
-            $("#file").change(function () {
-                if ($("#file").val() != "") {
-                    $("#fileinput").prop("value", $("#file").val().split('\\').pop());
-                }
-            });
-        });
-    </script>
+            <script>$(document).ready(function () {
+                    $("#file").change(function () {
+                        if ($("#file").val() != "") {
+                            $("#fileinput").prop("value", $("#file").val().split('\\').pop());
+                        }
+                    });
+                });</script>
 
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+            @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        }

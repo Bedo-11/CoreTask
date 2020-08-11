@@ -1,0 +1,46 @@
+﻿<Properties StartupConfiguration="{19D51FD0-127D-47BE-8A4B-389B958661A0}|WebApplication3">
+  <MonoDevelop.Ide.ItemProperties.WebApplication3 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Shared/_LoginPartial.cshtml">
+    <Files>
+      <File FileName="appsettings.json" Line="1" Column="1" />
+      <File FileName="Migrations/20200811051611_CreateDb.cs" Line="1" Column="1" />
+      <File FileName="Migrations/20200811051904_CreateDb1.cs" Line="1" Column="1" />
+      <File FileName="Views/Reportzs/Index.cshtml" Line="78" Column="11" />
+      <File FileName="wwwroot/css/site.css" Line="25" Column="41" />
+      <File FileName="Views/Reportzs/Create.cshtml" Line="19" Column="40" />
+      <File FileName="Views/Reportzs/Details.cshtml" Line="21" Column="54" />
+      <File FileName="Models/ApplicationUser.cs" Line="6" Column="32" />
+      <File FileName="Data/ApplicationDbContext.cs" Line="17" Column="29" />
+      <File FileName="Models/Reportz.cs" Line="24" Column="50" />
+      <File FileName="Controllers/ReportzsController.cs" Line="90" Column="31" />
+      <File FileName="Views/Shared/_Layout.cshtml" Line="43" Column="42" />
+      <File FileName="Views/Reportzs/Edit.cshtml" Line="48" Column="1" />
+      <File FileName="Views/Reportzs/Delete.cshtml" Line="11" Column="44" />
+      <File FileName="Startup.cs" Line="40" Column="46" />
+      <File FileName="Views/Shared/_LoginPartial.cshtml" Line="4" Column="35" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WebApplication3" expanded="True">
+            <Node name="WebApplication3" expanded="True">
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Shared" expanded="True">
+                  <Node name="_LoginPartial.cshtml" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

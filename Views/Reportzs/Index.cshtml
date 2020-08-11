@@ -4,50 +4,75 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Statuez)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Topicz)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Textz)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ImageUrl)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Statuez.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Topicz)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Textz)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ImageUrl)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    
+        
+   
+    <div class="container form-b bShadow bShadow-62 animate__animated animate__fadeInDown">
+
+        
+
+        <div class="container">
+            <div class="row d-flex justify-content-between mb-5">
+                <a style="margin-top: 5px;" class="btn btn-warning mt-5" asp-action="Create">انشاء بلاغ جديد</a>
+
+            </div>
+            
+            <div class="row d-flex justify-content-between mb-5">
+
+                <div class="col-md-12">
+                    <h2 class="mt-5">جميع البلاغات</h2>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="container">
+                <table class="table table-striped table-bordered mb-5">
+                    <thead>
+                        <tr>
+                            <th>
+                                الحالة
+                            </th>
+                            <th>
+                                الموضوع
+                            </th>
+                            <th>
+                                نص البلاغ
+                            </th>
+                            @*<th>
+                                @Html.DisplayNameFor(model => model.ImageUrl)
+                            </th>*@
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Statuez.Name)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Topicz)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Textz)
+                                </td>
+                                @*<td>
+                                    @Html.DisplayFor(modelItem => item.ImageUrl)
+                                </td>*@
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.Id">تعديل البلاغ</a> |
+                                    <a asp-action="Details" asp-route-id="@item.Id">تفاصيل البلاغ</a> |
+                                    <a asp-action="Delete" asp-route-id="@item.Id">حذف البلاغ</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>

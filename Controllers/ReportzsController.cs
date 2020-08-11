@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
@@ -75,6 +76,12 @@ namespace WebApplication3.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,StatuezId,Topicz,Textz,ImageUrl")] Reportz reportz, IFormFile myfile)
         {
+    //        var model = new MyViewModel
+    //        {
+    //            Username = User.Identity.Name
+    //        }
+    //return View(model);
+            //var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             if (ModelState.IsValid)
             {
                 reportz.ImageUrl = await UserFile.UploadeNewImageAsync(reportz.ImageUrl,

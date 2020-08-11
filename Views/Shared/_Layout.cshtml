@@ -3,11 +3,16 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - WebApplication3</title>
+    <title>@ViewData["Title"] - نظام البلاغات</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+        <link rel="stylesheet" href="~/css/box-shadows.min (2).css">
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -17,7 +22,7 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav style="        background-color: goldenrod;" class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -29,11 +34,16 @@
         
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Reportzs" asp-action="Index">Reports</a></li>
-                    <li><a asp-area="" asp-controller="Statuezs" asp-action="Index">Status</a></li>
+
+                <ul class="nav navbar-nav pull-right">
+                    <li><a style="color: #fff; font-size: 20px;" asp-area="" asp-controller="Reportzs" asp-action="Index">البلاغات</a></li>
+                    @*<li><a asp-area="" asp-controller="Statuezs" asp-action="Index">ادارة الحالات</a></li>*@
                 </ul>
-                <partial name="_LoginPartial" />
+                <div class="pull-left">
+                    <partial name="_LoginPartial" />
+                </div>
+                
+
             </div>
         </div>
     </nav>
@@ -44,7 +54,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 1441 - WebApplication3</p>
+            
         </footer>
     </div>
 

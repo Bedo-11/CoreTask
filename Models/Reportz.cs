@@ -20,7 +20,7 @@ namespace WebApplication3.Models
         public Statuez Statuez { get; set; }
 
         [ScaffoldColumn(false)]
-        public String UserId { get; set; }
+        public string UserId { get; set; }
         public ApplicationUser User { get; set; }
 
         [Required]
