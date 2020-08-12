@@ -80,7 +80,7 @@ using WebApplication3.Models;
                     ");
             EndContext();
             BeginContext(353, 96, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e3b65af9dcc444a1a59b82d72e177dbf", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b7063b88ead0406f93810e16006abb38", async() => {
                 BeginContext(430, 15, true);
                 WriteLiteral("انشاء بلاغ جديد");
                 EndContext();
@@ -184,7 +184,7 @@ using WebApplication3.Models;
             WriteLiteral("\n                                </td>\n                                <td>\n                                    ");
             EndContext();
             BeginContext(2298, 61, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d456141e8fbf41c2b4e3b87f71a99c58", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ead6783ec4fd4d4d8abd1d78c1a3a3b2", async() => {
                 BeginContext(2343, 12, true);
                 WriteLiteral("تعديل البلاغ");
                 EndContext();
@@ -219,7 +219,7 @@ using WebApplication3.Models;
             WriteLiteral(" |\n                                    ");
             EndContext();
             BeginContext(2398, 65, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fd3178b779854211a1c65d20d4671ddc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "03f6dfc0cf1641abac66e18a681f1815", async() => {
                 BeginContext(2446, 13, true);
                 WriteLiteral("تفاصيل البلاغ");
                 EndContext();
@@ -254,7 +254,7 @@ using WebApplication3.Models;
             WriteLiteral(" |\n                                    ");
             EndContext();
             BeginContext(2502, 61, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "67fd10af91ba487da2660121c7f7b6b1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c3651db4f2714bd38d78548a5d76e935", async() => {
                 BeginContext(2549, 10, true);
                 WriteLiteral("حذف البلاغ");
                 EndContext();

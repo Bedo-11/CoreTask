@@ -176,12 +176,12 @@ using WebApplication3.Models;
                         ");
             EndContext();
             BeginContext(1820, 239, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb01ba67c1684b0184b7c7ac5d51727c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "06d6ce8d27c84f7b97476d136a83c82b", async() => {
                 BeginContext(1846, 29, true);
                 WriteLiteral("\n                            ");
                 EndContext();
                 BeginContext(1875, 36, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "77f7737ba8cc4ecc9c76c93803113bc2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "70a8c6bea68d4a4fae65f26fb3c68d53", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -225,7 +225,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
             WriteLiteral("\n                    </div>\n                </div>\n                <div class=\"col-md-4\">\n                    <div class=\"form-group\">\n                        ");
             EndContext();
             BeginContext(2218, 168, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6a519cf08b8548faab18bb853e5c35ba", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "03d2bb1ebd7b4397895ffeaa6578a14e", async() => {
                 BeginContext(2285, 97, true);
                 WriteLiteral("\n                            رجوع      <i class=\"fas fa-arrow-left\"></i>\n                        ");
                 EndContext();

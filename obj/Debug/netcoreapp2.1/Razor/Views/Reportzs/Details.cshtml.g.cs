@@ -130,7 +130,7 @@ using WebApplication3.Models;
                             ");
             EndContext();
             BeginContext(1668, 204, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "75130dffc8ae4adcb1f6507a85d886aa", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aba4fa28ab7840f28faf0678e315335d", async() => {
                 BeginContext(1762, 106, true);
                 WriteLiteral("\n                                تعديل      <i class=\"fas fa-arrow-left\"></i>\n                            ");
                 EndContext();
@@ -167,7 +167,7 @@ using WebApplication3.Models;
             WriteLiteral("\n                        </div>\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"form-group\">\n                            ");
             EndContext();
             BeginContext(2051, 176, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7f9047a1d7c64729b2bac7f9a6d4a116", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b73d0c2c60a445249103500e9fba6152", async() => {
                 BeginContext(2118, 105, true);
                 WriteLiteral("\n                                رجوع      <i class=\"fas fa-arrow-left\"></i>\n                            ");
                 EndContext();
@@ -191,7 +191,7 @@ using WebApplication3.Models;
             WriteLiteral("\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n        </div>\n    </div>\n<div>\n    <a >Edit</a> \n    ");
             EndContext();
             BeginContext(2383, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "22ae520898284cc1acb299f223e6fe00", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c3164865add641af9039c80c9bb6fdb7", async() => {
                 BeginContext(2405, 12, true);
                 WriteLiteral("Back to List");
                 EndContext();

@@ -47,8 +47,7 @@ namespace WebApplication3.Areas.Identity.Pages.Account
 
             [Required]
             [Display(Name = "PhoneNumber")]
-            [DataType(DataType.Text)]
-            [StringLength(10, ErrorMessage = "رقم الهوية يجب ان يتكون من عشرة ارقام", MinimumLength = 10)]
+            //[StringLength(10, ErrorMessage = "رقم الهوية يجب ان يتكون من عشرة ارقام", MinimumLength = 10)]
             public int National { get; set; }
 
             [Required]

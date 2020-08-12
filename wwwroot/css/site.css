@@ -14,6 +14,10 @@ body {
     padding-right: 15px;
 }
 
+nav {
+    background-color: goldenrod;
+}
+
 h2 {
     border-bottom: 2px solid goldenrod;
     padding-bottom: 5px;
