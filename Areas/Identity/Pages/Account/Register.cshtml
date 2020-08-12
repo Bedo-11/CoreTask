@@ -4,33 +4,68 @@
     ViewData["Title"] = "Register";
 }
 
-<h2>@ViewData["Title"]</h2>
+    
+    <div class="container form-b rig bShadow bShadow-62 animate__animated animate__fadeInDown">
+        <div class="row d-flex justify-content-center mb-5">
 
-<div class="row">
-    <div class="col-md-4">
-        <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
-            <h4>Create a new account.</h4>
-            <hr />
-            <div asp-validation-summary="All" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Input.Email"></label>
-                <input asp-for="Input.Email" class="form-control" />
-                <span asp-validation-for="Input.Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Input.Password"></label>
-                <input asp-for="Input.Password" class="form-control" />
-                <span asp-validation-for="Input.Password" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Input.ConfirmPassword"></label>
-                <input asp-for="Input.ConfirmPassword" class="form-control" />
-                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
-            </div>
-            <button type="submit" class="btn btn-default">Register</button>
-        </form>
+            <h2 style="text-align: center" class="mt-5">إنشاء حساب مستخدم جديد</h2>
+
+        </div>
+
+
+            <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
+
+                <div class="row">
+
+                    <div class="form-group col-md-12">
+                        <label asp-for="Input.UserName">اسم المستخدم</label>
+                        <input asp-for="Input.UserName" class="form-control" />
+                        <span asp-validation-for="Input.UserName" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group col-md-12">
+                        <label asp-for="Input.Email">البريد الالكتروني</label>
+                        <input asp-for="Input.Email" class="form-control" />
+                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group col-md-12">
+                        <label asp-for="Input.PhoneNumber">رقم الجوال</label>
+                        <input asp-for="Input.PhoneNumber" class="form-control" />
+                        <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group col-md-12">
+                        <label asp-for="Input.Password">كلمة المرور</label>
+                        <input asp-for="Input.Password" class="form-control" />
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    </div>
+
+
+                    <div class="form-group col-md-12">
+                        <label asp-for="Input.ConfirmPassword">تأكيد كلمة المرور</label>
+                        <input asp-for="Input.ConfirmPassword" class="form-control" />
+                        <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                    </div>
+
+
+                </div>
+
+                <div style="display: flex; justify-content: center" class="row mt-4 mb-5">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <button type="submit" class="form-control submit">
+                                تسجيل   <i class="fas fa-save"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
     </div>
-</div>
+
+
+
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />

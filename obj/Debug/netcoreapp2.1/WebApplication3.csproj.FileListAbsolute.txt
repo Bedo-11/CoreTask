@@ -160,3 +160,4 @@ C:/Users/BEDO/source/repos/WebApplication3/WebApplication3/obj/Debug/netcoreapp2
 /Users/bedo/Desktop/core/CoreTask/obj/Debug/netcoreapp2.1/WebApplication3.pdb
 /Users/bedo/Desktop/core/CoreTask/obj/Debug/netcoreapp2.1/WebApplication3.genruntimeconfig.cache
 /Users/bedo/Desktop/core/CoreTask/obj/Debug/netcoreapp2.1/WebApplication3.csproj.CopyComplete
+/Users/bedo/Desktop/core/CoreTask/obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/_AuthLayout.cshtml.g.cs

@@ -4,6 +4,7 @@ body {
     padding-top: 50px;
     padding-bottom: 20px;
     direction: rtl;
+
 }
 
 /* Wrapping element */
@@ -21,20 +22,22 @@ body {
     background-color: rgba(218, 165, 32, 0.644);
 }
 
+
 .submit:hover {
     background-color: rgb(235, 171, 11);
     color: #fff;
-    transition: ease-in-out 0.2s;
-}
+ }
 
 .submit {
     background-color: goldenrod;
     color: #fff;
 }
 
-/*form {
-    width: 100%;
-}*/
+.rig {
+    width: 50%;
+    margin: 10% auto;
+}
+
 
 .form-b {
     margin-top: 10%;

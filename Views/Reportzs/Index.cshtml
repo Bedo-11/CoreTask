@@ -14,7 +14,10 @@
 
         <div class="container">
             <div class="row d-flex justify-content-between mb-5">
-                <a style="margin-top: 5px;" class="btn btn-warning mt-5" asp-action="Create">انشاء بلاغ جديد</a>
+                <div class="col-md-12">
+                    <a style="margin-top: 5px;" class="btn btn-warning mt-5" asp-action="Create">انشاء بلاغ جديد</a>
+                </div>
+                
 
             </div>
             
@@ -41,9 +44,9 @@
                             <th>
                                 نص البلاغ
                             </th>
-                            @*<th>
-                                @Html.DisplayNameFor(model => model.ImageUrl)
-                            </th>*@
+                            <th>
+                                منشئ البلاغ
+                            </th>
                             <th></th>
                         </tr>
                     </thead>
@@ -60,9 +63,9 @@
                                 <td>
                                     @Html.DisplayFor(modelItem => item.Textz)
                                 </td>
-                                @*<td>
-                                    @Html.DisplayFor(modelItem => item.ImageUrl)
-                                </td>*@
+                                <td>
+                                    @Html.DisplayFor(modelItem => User.Identity.Name)
+                                </td>
                                 <td>
                                     <a asp-action="Edit" asp-route-id="@item.Id">تعديل البلاغ</a> |
                                     <a asp-action="Details" asp-route-id="@item.Id">تفاصيل البلاغ</a> |

@@ -14,9 +14,9 @@
                     <div class="row">
                         @if (User.Identity.IsAuthenticated)
                         {
-                            <div class="form-group col-md-6 pull-right">
-                                <label asp-for="Topicz" class="control-label">منشئ البلاغ</label>
-                                <input asp-for="Topicz" class="form-control" value="@User.Identity.Name" />
+                            <div class="form-group col-md-6">
+                                <label class="control-label">منشئ البلاغ</label>
+                                <input disabled class="form-control" value="@User.Identity.Name" />
                             </div>
 
                         }

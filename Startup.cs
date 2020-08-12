@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using WebApplication3.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 namespace WebApplication3
 {

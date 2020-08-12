@@ -1,23 +1,24 @@
 ﻿<Properties StartupConfiguration="{19D51FD0-127D-47BE-8A4B-389B958661A0}|WebApplication3">
   <MonoDevelop.Ide.ItemProperties.WebApplication3 PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Shared/_LoginPartial.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Migrations/20200812102412_fix.cs">
     <Files>
-      <File FileName="appsettings.json" Line="1" Column="1" />
-      <File FileName="Migrations/20200811051611_CreateDb.cs" Line="1" Column="1" />
-      <File FileName="Migrations/20200811051904_CreateDb1.cs" Line="1" Column="1" />
-      <File FileName="Views/Reportzs/Index.cshtml" Line="78" Column="11" />
-      <File FileName="wwwroot/css/site.css" Line="25" Column="41" />
-      <File FileName="Views/Reportzs/Create.cshtml" Line="19" Column="40" />
-      <File FileName="Views/Reportzs/Details.cshtml" Line="21" Column="54" />
-      <File FileName="Models/ApplicationUser.cs" Line="6" Column="32" />
-      <File FileName="Data/ApplicationDbContext.cs" Line="17" Column="29" />
-      <File FileName="Models/Reportz.cs" Line="24" Column="50" />
-      <File FileName="Controllers/ReportzsController.cs" Line="90" Column="31" />
-      <File FileName="Views/Shared/_Layout.cshtml" Line="43" Column="42" />
-      <File FileName="Views/Reportzs/Edit.cshtml" Line="48" Column="1" />
-      <File FileName="Views/Reportzs/Delete.cshtml" Line="11" Column="44" />
-      <File FileName="Startup.cs" Line="40" Column="46" />
-      <File FileName="Views/Shared/_LoginPartial.cshtml" Line="4" Column="35" />
+      <File FileName="Areas/Identity/Pages/Account/Register.cshtml.cs" Line="46" Column="52" />
+      <File FileName="Areas/Identity/Pages/Account/Login.cshtml" Line="5" Column="34" />
+      <File FileName="Areas/Identity/Pages/Account/Manage/PersonalData.cshtml" Line="1" Column="1" />
+      <File FileName="Startup.cs" Line="41" Column="56" />
+      <File FileName="Areas/Identity/Pages/_AuthLayout.cshtml" Line="1" Column="1" />
+      <File FileName="Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml" Line="4" Column="54" />
+      <File FileName="Areas/Identity/Pages/Account/Register.cshtml" Line="4" Column="36" />
+      <File FileName="Views/Shared/_Layout.cshtml" Line="85" Column="1" />
+      <File FileName="Areas/Identity/Pages/Account/Manage/_Layout.cshtml" Line="1" Column="1" />
+      <File FileName="Areas/Identity/Pages/_ValidationScriptsPartial.cshtml" Line="1" Column="1" />
+      <File FileName="Areas/Identity/Pages/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="Areas/Identity/Pages/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="Views/Shared/_LoginPartial.cshtml" Line="23" Column="37" />
+      <File FileName="Models/ApplicationUser.cs" Line="21" Column="53" />
+      <File FileName="Data/ApplicationDbContext.cs" Line="11" Column="71" />
+      <File FileName="Migrations/20200812090549_phone1.cs" Line="1" Column="1" />
+      <File FileName="Migrations/20200812102412_fix.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -25,11 +26,12 @@
           <Node name="WebApplication3" expanded="True">
             <Node name="WebApplication3" expanded="True">
               <Node name="Data" expanded="True" />
+              <Node name="Migrations" expanded="True">
+                <Node name="20200812102412_fix.cs" selected="True" />
+              </Node>
               <Node name="Models" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Shared" expanded="True">
-                  <Node name="_LoginPartial.cshtml" selected="True" />
-                </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="js" expanded="True" />
               </Node>
             </Node>
           </Node>
