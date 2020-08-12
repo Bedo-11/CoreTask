@@ -88,7 +88,6 @@ C:/Users/BEDO/source/repos/WebApplication3/WebApplication3/obj/Debug/netcoreapp2
 /Users/bedo/Desktop/core/CoreTask/bin/Debug/netcoreapp2.1/WebApplication3.pdb
 /Users/bedo/Desktop/core/CoreTask/bin/Debug/netcoreapp2.1/WebApplication3.Views.dll
 /Users/bedo/Desktop/core/CoreTask/bin/Debug/netcoreapp2.1/WebApplication3.Views.pdb
-/Users/bedo/Desktop/core/CoreTask/obj/Debug/netcoreapp2.1/WebApplication3.csprojAssemblyReference.cache
 /Users/bedo/Desktop/core/CoreTask/obj/Debug/netcoreapp2.1/WebApplication3.Properties.Resources.resources
 /Users/bedo/Desktop/core/CoreTask/obj/Debug/netcoreapp2.1/WebApplication3.csproj.GenerateResource.cache
 /Users/bedo/Desktop/core/CoreTask/obj/Debug/netcoreapp2.1/WebApplication3.AssemblyInfoInputs.cache
@@ -131,6 +130,7 @@ C:/Users/BEDO/source/repos/WebApplication3/WebApplication3/obj/Debug/netcoreapp2
 /Users/bedo/Desktop/core/CoreTask/obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml.g.cs
 /Users/bedo/Desktop/core/CoreTask/obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/Account/_ViewImports.cshtml.g.cs
 /Users/bedo/Desktop/core/CoreTask/obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/Error.cshtml.g.cs
+/Users/bedo/Desktop/core/CoreTask/obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/_AuthLayout.cshtml.g.cs
 /Users/bedo/Desktop/core/CoreTask/obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml.g.cs
 /Users/bedo/Desktop/core/CoreTask/obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/_ViewImports.cshtml.g.cs
 /Users/bedo/Desktop/core/CoreTask/obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/_ViewStart.cshtml.g.cs
@@ -160,4 +160,3 @@ C:/Users/BEDO/source/repos/WebApplication3/WebApplication3/obj/Debug/netcoreapp2
 /Users/bedo/Desktop/core/CoreTask/obj/Debug/netcoreapp2.1/WebApplication3.pdb
 /Users/bedo/Desktop/core/CoreTask/obj/Debug/netcoreapp2.1/WebApplication3.genruntimeconfig.cache
 /Users/bedo/Desktop/core/CoreTask/obj/Debug/netcoreapp2.1/WebApplication3.csproj.CopyComplete
-/Users/bedo/Desktop/core/CoreTask/obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/_AuthLayout.cshtml.g.cs
