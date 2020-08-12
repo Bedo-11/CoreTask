@@ -18,6 +18,32 @@ h2 {
     border-bottom: 2px solid goldenrod;
     padding-bottom: 5px;
 }
+input,
+textarea {
+    text-align: center;
+    color: goldenrod;
+    border: 1px solid goldenrod;
+}
+
+    input:hover,
+    input:focus,
+    textarea:hover,
+    textarea:focus {
+        box-shadow: none;
+        border-color: none;
+        outline: goldenrod auto 5px;
+    }
+
+.form-control {
+    border-color: goldenrod;
+    box-shadow: 1px goldenrod;
+}
+
+    .form-control:focus {
+        border-color: goldenrod;
+        box-shadow: 0 0 0 0.1rem goldenrod;
+    }
+
 
 .table {
     border: goldenrod solid 1px;
