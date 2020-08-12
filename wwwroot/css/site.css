@@ -4,7 +4,7 @@ body {
     padding-top: 50px;
     padding-bottom: 20px;
     direction: rtl;
-
+    font-family: 'Tajawal', sans-serif;
 }
 
 /* Wrapping element */
@@ -12,6 +12,11 @@ body {
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+h2 {
+    border-bottom: 2px solid goldenrod;
+    padding-bottom: 5px;
 }
 
 .table {
@@ -37,6 +42,15 @@ body {
     width: 50%;
     margin: 10% auto;
 }
+
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .rig {
+        width: 100%;
+        margin: 10% auto;
+    }
+}
+
 
 
 .form-b {
